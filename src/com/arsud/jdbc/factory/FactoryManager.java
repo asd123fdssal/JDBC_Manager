@@ -25,9 +25,9 @@ public class FactoryManager {
 		this.factorys.add(factory);
 	}
 
-	public AbsFactory<? extends IModel> getFactory(String name) {
+	public AbsFactory<? extends IModel> getFactory(Class<?> classRef) {
 		for (AbsFactory<? extends IModel> factory : this.factorys) {
-			if (factory.getClass().getSimpleName().equals(name)) {
+			if (factory.getClass().equals(classRef)) {
 				return factory;
 			}
 		}

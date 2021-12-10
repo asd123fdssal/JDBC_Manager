@@ -4,7 +4,7 @@ import java.sql.ResultSet;
 import java.sql.SQLException;
 
 import com.arsud.jdbc.factory.AbsFactory;
-import com.arsud.jdbc.model.User;
+import com.arsud.jdbc.model.impl.User;
 
 public class UserFactory extends AbsFactory<User> {
 

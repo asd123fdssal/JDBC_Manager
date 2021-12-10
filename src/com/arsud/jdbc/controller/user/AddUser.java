@@ -1,7 +1,7 @@
 package com.arsud.jdbc.controller.user;
 
 import com.arsud.jdbc.connection.DBManager;
-import com.arsud.jdbc.model.User;
+import com.arsud.jdbc.model.impl.User;
 
 public class AddUser {
 

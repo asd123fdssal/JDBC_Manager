@@ -1,4 +1,6 @@
-package com.arsud.jdbc.model;
+package com.arsud.jdbc.model.impl;
+
+import com.arsud.jdbc.model.IModel;
 
 public class User implements IModel {
 
@@ -54,6 +56,11 @@ public class User implements IModel {
 	@Override
 	public Object[] toArray() {
 		return new Object[] { id, userid, userpw, nickname };
+	}
+
+	@Override
+	public String toString() {
+		return "User [id=" + id + ", userid=" + userid + ", userpw=" + userpw + ", nickname=" + nickname + "]";
 	}
 
 }

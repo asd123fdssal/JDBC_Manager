@@ -7,8 +7,6 @@ import java.util.List;
 import com.arsud.jdbc.connection.DBManager;
 
 public abstract class AbsFactory<T> {
-
-	protected String name = this.getClass().getSimpleName();
 	
 	public List<T> getModelList(String sql, Object... objects) throws Exception {
 		ArrayList<T> modelList = new ArrayList<>();
