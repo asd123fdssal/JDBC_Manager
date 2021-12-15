@@ -8,13 +8,13 @@ import com.arsud.jdbc.model.impl.User;
 
 public class SelectAllUser {
 
-	public SelectAllUser() {
+	public List<User> selectUsers() throws Exception {
 		try {
 			List<User> userList = ((UserFactory) FactoryManager.getFactorymgr().getFactory(UserFactory.class))
 					.getModelList("select * from user");
-			userList.stream().forEach(it -> System.out.println(it.toString()));
+			return userList;
 		} catch (Exception e) {
-			e.printStackTrace();
+			throw e;
 		}
 	}
 

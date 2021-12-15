@@ -5,7 +5,11 @@ import com.arsud.jdbc.controller.user.SelectAllUser;
 public class ProjectMain {
 
 	public static void main(String[] args) {
-		new SelectAllUser();
+		try {
+			new SelectAllUser().selectUsers();
+		} catch (Exception e) {
+			e.printStackTrace();
+		}
 	}
 	
 }
